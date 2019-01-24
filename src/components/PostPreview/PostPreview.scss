@@ -1,0 +1,37 @@
+.md-paper {
+  .title-container {
+    padding: 1.5em 15px 5px 15px;
+    display: block;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    h2 {
+      color: black;
+      font-size: 24px;
+      font-weight: bold;
+      cursor: pointer;
+      margin-bottom: 0px;
+    }
+    .date {
+      color: #90a4ae;
+      > i {
+        font-size: 16px;
+        color: #90a4ae;
+        margin-right: 5px;
+      }
+    }
+  }
+
+  .md-card-text {
+    padding: 26px 16px;
+  }
+
+  .md-card-text:last-child {
+    padding-bottom: 4px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .md-paper .title-container {
+    border-bottom: none;
+  }
+}

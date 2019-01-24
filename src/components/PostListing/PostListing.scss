@@ -1,0 +1,17 @@
+.post-preview-wrap {
+  width: 66%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px 0px;
+}
+@media screen and (min-width: 1100px) {
+  .post-preview-wrap {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .post-preview-wrap {
+    width: 95%;
+  }
+}

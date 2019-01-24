@@ -1,0 +1,22 @@
+div .mobile-fix {
+  @media (max-width: 360px - 1px) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+@media screen and (max-width: 320px) {
+  header .md-title--toolbar {
+    line-height: 48px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .md-tile-addon--icon {
+    > i {
+      width: 24px;
+      height: 24px;
+    }
+  }
+}
+// #___gatsby {
+//   min-width: 320px;
+// }

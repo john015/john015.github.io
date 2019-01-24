@@ -1,0 +1,16 @@
+.post-preview-tags {
+  margin: 5px 2px 0;
+  cursor: pointer;
+  background-color: #212121;
+  > .md-chip-text {
+    color: white;
+  }
+}
+
+.post-tag-container {
+  margin-top: 14px;
+  display: flex;
+  flex-flow: row wrap;
+  align-content: center;
+  align-items: center;
+}
