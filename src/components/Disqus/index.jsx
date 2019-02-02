@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import ReactDisqusComments from 'react-disqus-comments'
+// import ReactDisqusComments from 'react-disqus-comments'
 import urljoin from 'url-join'
 import Card from 'react-md/lib/Cards/Card'
 import CardTitle from 'react-md/lib/Cards/CardTitle'
@@ -7,6 +7,7 @@ import CardText from 'react-md/lib/Cards/CardText'
 import Avatar from 'react-md/lib/Avatars'
 import FontIcon from 'react-md/lib/FontIcons'
 import Snackbar from 'react-md/lib/Snackbars'
+import { DiscussionEmbed } from 'disqus-react'
 import config from '../../../data/SiteConfig'
 
 class Disqus extends Component {
@@ -26,7 +27,7 @@ class Disqus extends Component {
 
   notifyAboutComment() {
     const toasts = this.state.toasts.slice()
-    toasts.push({ text: 'New comment available!' })
+    toasts.push({ text: '댓글이 등록되었습니다' })
     this.setState({ toasts })
   }
 
@@ -37,6 +38,11 @@ class Disqus extends Component {
     }
     const post = postNode.frontmatter
     const url = urljoin(config.siteUrl, config.pathPrefix, postNode.fields.slug)
+    const disqusConfig = {
+      url,
+      identifier: post.title,
+      title: post.title
+    }
 
     return (
       <Card className="md-grid md-cell md-cell--12">
@@ -46,13 +52,9 @@ class Disqus extends Component {
           expander={!expanded}
         />
         <CardText expandable={!expanded}>
-          <ReactDisqusComments
+          <DiscussionEmbed
             shortname={config.disqusShortname}
-            identifier={post.title}
-            title={post.title}
-            url={url}
-            category_id={post.category_id}
-            onNewComment={this.notifyAboutComment}
+            config={disqusConfig}
           />
         </CardText>
         <Snackbar
