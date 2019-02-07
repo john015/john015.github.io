@@ -35,7 +35,7 @@ $phone-status-bar-height: 24px - 12px;
   }
 
   .post-header {
-    color: black;
+    color: rgba(0, 0, 0, 0.84);
     font-size: 32px;
     font-weight: bold;
     cursor: pointer;
@@ -46,6 +46,8 @@ $phone-status-bar-height: 24px - 12px;
   }
 
   .detail-post-wrap {
+    margin-top: 95px;
+    margin-bottom: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -58,18 +60,31 @@ $phone-status-bar-height: 24px - 12px;
       display: flex;
       flex-direction: column;
       justify-content: center;
+      .post-tag-container {
+        padding: 0px 16px;
+      }
     }
 
     .post-body {
       max-width: 100%;
-
-      > h1,
+      font-weight: 400;
+      word-break: break-word;
+      font-size: 18px;
       > h2,
       > h3,
       > h4,
       > h5,
       > h6 {
         margin-bottom: 10px !important;
+      }
+
+      h2,
+      h3,
+      h4 {
+        margin-top: 35px;
+      }
+      p {
+        line-height: 1.75;
       }
 
       li {
@@ -123,5 +138,40 @@ $phone-status-bar-height: 24px - 12px;
           0 0;
       }
     }
+  }
+}
+.date .md-icon {
+  position: relative;
+  top: 1.5px;
+  font-size: 20px;
+  margin-right: 7px;
+  color: #90a4ae;
+}
+
+@media screen and (max-width: 640px) {
+  .post-page-contents .detail-post-wrap {
+    margin-top: 20px !important;
+  }
+}
+
+@media (min-width: 840px) {
+  .md-grid {
+    padding: 0 !important;
+  }
+}
+@media (max-width: 599px) {
+  .md-paper .md-card-text {
+    padding: 20px 12px !important;
+  }
+  .md-grid.md-grid--no-spacing > .md-cell--9 {
+    padding: 12px 0px 0px 0px;
+  }
+  .md-cell {
+    padding: 0px;
+    padding-bottom: 12px;
+    margin: 0px !important;
+  }
+  .md-cell--12 {
+    width: 100%;
   }
 }

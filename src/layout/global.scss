@@ -4,11 +4,6 @@ div .mobile-fix {
     padding-right: 0;
   }
 }
-@media screen and (max-width: 320px) {
-  header .md-title--toolbar {
-    line-height: 48px;
-  }
-}
 @media screen and (min-width: 1025px) {
   .md-tile-addon--icon {
     > i {
@@ -17,6 +12,25 @@ div .mobile-fix {
     }
   }
 }
-// #___gatsby {
-//   min-width: 320px;
-// }
+
+.md-display-4,
+.md-display-3,
+.md-display-2,
+h1,
+.md-display-1,
+caption,
+.md-caption {
+  color: rgba(0, 0, 0, 0.84);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 700;
+}
+
+#___gatsby {
+  min-width: 320px;
+  background-color: white;
+}

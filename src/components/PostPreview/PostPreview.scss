@@ -13,6 +13,11 @@
     }
     .date {
       color: #90a4ae;
+      .md-icon {
+        position: relative;
+        bottom: 1.5px;
+        color: #90a4ae;
+      }
       > i {
         font-size: 16px;
         color: #90a4ae;
@@ -22,14 +27,13 @@
   }
 
   .md-card-text {
-    padding: 26px 16px;
+    padding: 20px 16px;
   }
 
   .md-card-text:last-child {
-    padding-bottom: 4px;
+    padding-bottom: 24px;
   }
 }
-
 @media screen and (max-width: 600px) {
   .md-paper .title-container {
     border-bottom: none;

@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-material",
-  "description": "GatsbyJS Material Blog theme.",
-  "version": "2.0.0",
-  "author": "Ruben Harutyunyan <vagr9k@gmail.com>",
+  "name": "johnsdevlog",
+  "description": "my blog",
+  "version": "0.1.0",
+  "author": "john015 <lsw0150305@gmail.com>",
   "dependencies": {
     "disqus-react": "^1.0.5",
     "font-awesome": "^4.7.0",
@@ -62,9 +62,6 @@
     "stylelint-config-standard": "^18.0.0",
     "write-good": "^1.0.1"
   },
-  "keywords": [
-    "gatsby"
-  ],
   "license": "MIT",
   "main": "n/a",
   "scripts": {

@@ -27,6 +27,11 @@ const config = {
       label: 'Email',
       url: 'mailto:lsw0150305@gmail.com',
       iconClassName: 'fa fa-envelope'
+    },
+    {
+      label: 'RSS',
+      url: 'https://john015.github.io/rss.xml',
+      iconClassName: 'fa fa-rss'
     }
   ],
   copyright: 'All content copyright john015 © 2019 • All rights reserved.' // Copyright string for the footer of the website and RSS feed.

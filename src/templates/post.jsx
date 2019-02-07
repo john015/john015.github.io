@@ -64,15 +64,11 @@ export default class PostTemplate extends React.Component {
             <link rel="canonical" href={`${config.siteUrl}${post.id}`} />
           </Helmet>
           <SEO postPath={slug} postNode={postNode} postSEO />
-          <PostCover
-            postNode={postNode}
-            coverHeight={coverHeight}
-            coverClassName="md-grid md-cell--9 post-cover"
-          />
           <div
             className={`md-grid md-cell--9 post-page-contents mobile-fix ${postOverlapClass}`}
           >
             <Card className="md-grid md-cell md-cell--12 post detail-post-wrap">
+              <PostCover postNode={postNode} coverHeight={coverHeight} />
               <CardText className="post-body">
                 <h1 className="post-header">{post.title}</h1>
                 <PostInfo postNode={postNode} />
@@ -109,10 +105,6 @@ export const pageQuery = graphql`
         tags
       }
       fields {
-        nextTitle
-        nextSlug
-        prevTitle
-        prevSlug
         slug
         date
       }

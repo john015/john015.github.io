@@ -1,10 +1,10 @@
-import React, { Component } from "react";
-import { StaticQuery, graphql } from "gatsby";
-import PostCover from "./PostCoverComponent";
+import React, { Component } from 'react'
+import { StaticQuery, graphql } from 'gatsby'
+import PostCover from './PostCoverComponent'
 
 class queryWrapper extends Component {
   render() {
-    const { postNode, coverHeight, coverClassName } = this.props;
+    const { postNode, coverHeight, coverClassName } = this.props
     return (
       <StaticQuery
         query={graphql`
@@ -33,7 +33,7 @@ class queryWrapper extends Component {
                       type
                       owner
                     }
-                    fluid(maxWidth: 1240) {
+                    fluid(maxWidth: 4000) {
                       ...GatsbyImageSharpFluid
                       originalName
                     }
@@ -52,8 +52,8 @@ class queryWrapper extends Component {
           />
         )}
       />
-    );
+    )
   }
 }
 
-export default queryWrapper;
+export default queryWrapper
