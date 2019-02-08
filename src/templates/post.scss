@@ -70,6 +70,13 @@ $phone-status-bar-height: 24px - 12px;
       font-weight: 400;
       word-break: break-word;
       font-size: 18px;
+      pre {
+        border-radius: 10px;
+        background-color: rgb(40, 44, 52) !important;
+        > * {
+          background-color: transparent;
+        }
+      }
       > h2,
       > h3,
       > h4,
@@ -81,10 +88,18 @@ $phone-status-bar-height: 24px - 12px;
       h2,
       h3,
       h4 {
-        margin-top: 35px;
+        white-space: normal;
+        margin-top: 40px;
       }
       p {
+        margin-bottom: 0px !important;
         line-height: 1.75;
+      }
+
+      blockquote {
+        margin: 0;
+        padding: 10px 15px;
+        border-left: 4px solid #ddd;
       }
 
       li {
@@ -150,7 +165,7 @@ $phone-status-bar-height: 24px - 12px;
 
 @media screen and (max-width: 640px) {
   .post-page-contents .detail-post-wrap {
-    margin-top: 20px !important;
+    margin-top: 8px !important;
   }
 }
 

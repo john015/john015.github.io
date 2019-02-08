@@ -9,7 +9,7 @@ const config = {
   siteDescription: '웹 기술에 대한 블로그 입니다.', // Website description used for RSS feeds/meta description tag.
   siteRss: '/rss.xml', // Path to the RSS file.
   siteFBAppID: '1825356251115265', // FB Application ID for using app insights
-  siteGATrackingID: 'UA-47311644-4', // Tracking code ID for google analytics.
+  siteGATrackingID: 'UA-134073355-1', // Tracking code ID for google analytics.
   disqusShortname: 'john-dev-log', // Disqus shortname.
   postDefaultCategoryID: 'Tech', // Default category for posts.
   dateFromFormat: 'YYYY-MM-DD', // Date format used in the frontmatter.
