@@ -1,7 +1,7 @@
 {
   "name": "johnsdevlog",
   "description": "my blog",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "john015 <lsw0150305@gmail.com>",
   "dependencies": {
     "disqus-react": "^1.0.5",
