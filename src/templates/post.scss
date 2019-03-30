@@ -20,7 +20,7 @@ $phone-status-bar-height: 24px - 12px;
 .post-page-contents {
   justify-content: center;
   width: 100%;
-  max-width: 752px;
+  max-width: 800px;
 
   .gatsby-resp-image-wrapper {
     z-index: 6 !important;
@@ -28,6 +28,7 @@ $phone-status-bar-height: 24px - 12px;
 
   img {
     max-width: 100%;
+    object-fit: initial !important;
   }
 
   video {
@@ -51,7 +52,7 @@ $phone-status-bar-height: 24px - 12px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-
+    box-shadow: none;
     .md-card-text {
       padding-top: 20px;
     }
@@ -71,7 +72,6 @@ $phone-status-bar-height: 24px - 12px;
       word-break: break-word;
       font-size: 18px;
       pre {
-        border-radius: 10px;
         background-color: rgb(40, 44, 52) !important;
         > * {
           background-color: transparent;

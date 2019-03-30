@@ -9,6 +9,7 @@ import FontIcon from 'react-md/lib/FontIcons'
 import Snackbar from 'react-md/lib/Snackbars'
 import { DiscussionEmbed } from 'disqus-react'
 import config from '../../../data/SiteConfig'
+import './Discuss.scss'
 
 class Disqus extends Component {
   constructor(props) {
@@ -45,7 +46,7 @@ class Disqus extends Component {
     }
 
     return (
-      <Card className="md-grid md-cell md-cell--12">
+      <Card className="md-grid md-cell md-cell--12 disqus-wrap">
         <CardTitle
           title="Comments"
           avatar={<Avatar icon={<FontIcon>comment</FontIcon>} />}
