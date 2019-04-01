@@ -28,7 +28,6 @@ $phone-status-bar-height: 24px - 12px;
 
   img {
     max-width: 100%;
-    object-fit: initial !important;
   }
 
   video {
@@ -166,6 +165,12 @@ $phone-status-bar-height: 24px - 12px;
 @media screen and (max-width: 640px) {
   .post-page-contents .detail-post-wrap {
     margin-top: 8px !important;
+  }
+}
+
+@media (min-width: 640px) {
+  .post-page-contents img {
+    object-fit: initial !important;
   }
 }
 
