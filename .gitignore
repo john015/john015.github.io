@@ -57,3 +57,4 @@ jspm_packages
 bundle-stats.json
 
 public
+.DS_Store
