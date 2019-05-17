@@ -34,8 +34,14 @@
     padding-bottom: 24px;
   }
 }
+
+.post-preview {
+  margin-bottom: 26px;
+}
+
 @media screen and (max-width: 600px) {
   .md-paper .title-container {
     border-bottom: none;
+    padding-bottom: 15px;
   }
 }
