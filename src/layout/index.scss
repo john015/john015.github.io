@@ -13,6 +13,13 @@ body {
   min-width: 320px;
 }
 
+@media screen and (max-width: 600px) {
+  .main-content .main-container,
+  main {
+    background-color: #f1f3f5;
+  }
+}
+
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700|Material+Icons');
 @import '~react-md/src/scss/react-md';
 @import 'theme.scss';
