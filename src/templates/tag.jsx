@@ -1,20 +1,17 @@
-import React from "react";
-import Helmet from "react-helmet";
-import { graphql } from "gatsby";
-import Layout from "../layout";
-import PostListing from "../components/PostListing";
-import config from "../../data/SiteConfig";
+import React from 'react'
+import Helmet from 'react-helmet'
+import { graphql } from 'gatsby'
+import Layout from '../layout'
+import PostListing from '../components/PostListing'
+import config from '../../data/SiteConfig'
 
 export default class TagTemplate extends React.Component {
   render() {
-    const { tag } = this.props.pageContext;
-    const postEdges = this.props.data.allMarkdownRemark.edges;
-
+    const { pageContext, location, data } = this.props
+    const { tag } = pageContext
+    const postEdges = data.allMarkdownRemark.edges
     return (
-      <Layout
-        location={this.props.location}
-        title={`Tagged in ${tag.charAt(0).toUpperCase() + tag.slice(1)}`}
-      >
+      <Layout location={location} title={`Tagged in ${tag}`}>
         <div className="tag-container">
           <Helmet>
             <title>{`Posts tagged as "${tag}" | ${config.siteTitle}`}</title>
@@ -23,7 +20,7 @@ export default class TagTemplate extends React.Component {
           <PostListing postEdges={postEdges} />
         </div>
       </Layout>
-    );
+    )
   }
 }
 
@@ -53,4 +50,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`;
+`
