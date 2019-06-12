@@ -1,6 +1,12 @@
 .post-cover {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    padding: 0 !important;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  padding: 0 !important;
+}
+
+@media screen and (max-width: 850px) {
+  .gatsby-image-wrapper img {
+    object-fit: fill !important;
+  }
 }
