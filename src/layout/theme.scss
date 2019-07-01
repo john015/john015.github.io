@@ -2,7 +2,7 @@
 
 $md-primary-color: $md-grey-900;
 $md-mobile-min-width: 200px;
-$md-secondary-color: $md-red-800;
+$md-secondary-color: #f00;
 $md-tertiary-color: $md-grey-300;
 $md-secondary-text-color: rgba(0, 0, 0, 0.84);
 
@@ -14,4 +14,8 @@ $md-secondary-text-color: rgba(0, 0, 0, 0.84);
 a {
   color: $md-secondary-color;
   text-decoration: none;
+}
+
+.post-body a:hover {
+  border-bottom: 1px solid $md-secondary-color;
 }
