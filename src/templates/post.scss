@@ -161,13 +161,6 @@ $phone-status-bar-height: 24px - 12px;
   margin-right: 7px;
   color: #90a4ae;
 }
-
-@media screen and (max-width: 640px) {
-  .post-page-contents .detail-post-wrap {
-    margin-top: 8px !important;
-  }
-}
-
 @media (min-width: 640px) {
   .post-page-contents img {
     object-fit: initial !important;
@@ -179,11 +172,23 @@ $phone-status-bar-height: 24px - 12px;
     padding: 0 !important;
   }
 }
-@media (max-width: 599px) {
-  .md-paper .md-card-text {
-    padding: 20px 12px !important;
+@media (max-width: 640px) {
+  .post-page-contents {
+    .post-header {
+      font-size: 24px;
+      font-weight: 32px;
+    }
+    img {
+      object-fit: initial !important;
+    }
+    .post-page-contents .detail-post-wrap {
+      margin-top: 8px !important;
+    }
+    .md-paper .md-card-text {
+      padding: 20px 12px !important;
+    }
   }
-  .md-grid.md-grid--no-spacing > .md-cell--9 {
+  .post-page-contents .md-grid.md-grid--no-spacing > .md-cell--9 {
     padding: 12px 0px 0px 0px;
   }
   .md-cell {
