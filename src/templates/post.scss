@@ -16,7 +16,9 @@ $phone-status-bar-height: 24px - 12px;
   margin-top: -20px !important;
   z-index: 2;
 }
-
+.md-grid {
+  padding: 0 !important;
+}
 .post-page-contents {
   justify-content: center;
   width: 100%;
@@ -166,12 +168,6 @@ $phone-status-bar-height: 24px - 12px;
     object-fit: initial !important;
   }
 }
-
-@media (min-width: 840px) {
-  .md-grid {
-    padding: 0 !important;
-  }
-}
 @media (max-width: 640px) {
   .post-page-contents {
     .post-header {
@@ -179,6 +175,8 @@ $phone-status-bar-height: 24px - 12px;
       font-weight: 32px;
     }
     img {
+      top: 20px !important;
+      height: 160px !important;
       object-fit: initial !important;
     }
     .post-page-contents .detail-post-wrap {
@@ -197,5 +195,9 @@ $phone-status-bar-height: 24px - 12px;
   }
   .md-cell--12 {
     width: 100%;
+  }
+  @media (max-width: 599px) {
+    .md-grid {
+    }
   }
 }

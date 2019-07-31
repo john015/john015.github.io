@@ -16,6 +16,6 @@ a {
   text-decoration: none;
 }
 
-.post-body a:hover {
+.post-body a:not(.anchor):hover {
   border-bottom: 1px solid $md-secondary-color;
 }

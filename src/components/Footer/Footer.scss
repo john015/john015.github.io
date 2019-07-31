@@ -11,6 +11,10 @@
   padding: 1rem;
   height: 130px;
   margin-top: 20px;
+  a {
+    color: #f00;
+    font-weight: 500;
+  }
   .notice-container {
     > span {
       display: block;
