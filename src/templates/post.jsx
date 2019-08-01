@@ -3,6 +3,9 @@ import Helmet from 'react-helmet'
 import { graphql } from 'gatsby'
 import Card from 'react-md/lib/Cards'
 import CardText from 'react-md/lib/Cards/CardText'
+import nprogress from 'nprogress'
+import throttle from 'lodash.throttle'
+import 'nprogress/nprogress.css'
 import Layout from '../layout'
 import Disqus from '../components/Disqus'
 import PostTags from '../components/PostTags'
@@ -14,25 +17,41 @@ import config from '../../data/SiteConfig'
 import './b16-tomorrow-dark.css'
 import './post.scss'
 
+nprogress.configure({ showSpinner: false, trickle: false, minimum: 0 })
+
 export default class PostTemplate extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
       mobile: true
     }
-    this.handleResize = this.handleResize.bind(this)
   }
 
   componentDidMount() {
+    nprogress.start()
     this.handleResize()
+    window.addEventListener('scroll', this.onScroll)
     window.addEventListener('resize', this.handleResize)
   }
 
   componentWillUnmount() {
+    window.removeEventListener('scroll', this.onScroll)
     window.removeEventListener('resize', this.handleResize)
   }
 
-  handleResize() {
+  onScroll = throttle(() => {
+    const scrollTop =
+      (document.documentElement && document.documentElement.scrollTop) ||
+      document.body.scrollTop
+    const { innerHeight } = window
+    const { scrollHeight } = document.body
+    const height = scrollHeight - innerHeight
+    const scrollPercent = 1 - (height - scrollTop) / height
+    if (scrollPercent > 1) return
+    nprogress.set(scrollPercent)
+  }, 50)
+
+  handleResize = () => {
     if (window.innerWidth >= 640) {
       this.setState({ mobile: false })
     } else {

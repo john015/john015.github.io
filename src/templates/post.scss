@@ -163,6 +163,9 @@ $phone-status-bar-height: 24px - 12px;
   margin-right: 7px;
   color: #90a4ae;
 }
+#nprogress .bar {
+  height: 4px !important;
+}
 @media (min-width: 640px) {
   .post-page-contents img {
     object-fit: initial !important;
@@ -195,9 +198,5 @@ $phone-status-bar-height: 24px - 12px;
   }
   .md-cell--12 {
     width: 100%;
-  }
-  @media (max-width: 599px) {
-    .md-grid {
-    }
   }
 }
