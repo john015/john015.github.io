@@ -5,6 +5,10 @@
   padding: 0 !important;
 }
 
+.post-cover-image img {
+  object-fit: fill !important;
+}
+
 @media screen and (max-width: 850px) {
   .gatsby-image-wrapper img {
     object-fit: fill !important;
