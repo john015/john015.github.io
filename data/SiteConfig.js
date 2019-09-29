@@ -3,7 +3,7 @@ const config = {
   siteTitleShort: 'John`s Dev log', // Short site title for homescreen (PWA). Preferably should be under 12 characters to prevent truncation.
   siteTitleAlt: 'My Dev log', // Alternative site title for SEO.
   siteLogo: '', // Logo used for SEO and manifest.
-  siteUrl: 'https://john015.github.io', // Domain of your website without pathPrefix.
+  siteUrl: 'https://john015.netlify.com', // Domain of your website without pathPrefix.
   pathPrefix: '/', // Prefixes all links. For cases when deployed to example.github.io/gatsby-material-starter/.
   fixedFooter: false, // Whether the footer component is fixed, i.e. always visible
   siteDescription: '웹 기술에 대한 블로그 입니다.', // Website description used for RSS feeds/meta description tag.
@@ -30,7 +30,7 @@ const config = {
     },
     {
       label: 'RSS',
-      url: 'https://john015.github.io/rss.xml',
+      url: 'https://john015.netlify.com/rss.xml',
       iconClassName: 'fa fa-rss'
     }
   ],

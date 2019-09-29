@@ -66,8 +66,8 @@ class SEO extends Component {
         }
       ])
     }
-    image = `https://john015.github.io/assets/${
-      image.split('https://john015.github.io/')[1]
+    image = `https://john015.netlify.com/assets/${
+      image.split('https://john015.netlify.com/')[1]
     }`
     return (
       <Helmet>

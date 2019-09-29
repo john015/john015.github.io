@@ -164,6 +164,7 @@ $phone-status-bar-height: 24px - 12px;
   color: #90a4ae;
 }
 #nprogress .bar {
+  background: #f00 !important;
   height: 4px !important;
 }
 @media (min-width: 640px) {

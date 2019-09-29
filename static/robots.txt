@@ -2,4 +2,4 @@ User-agent: *
 Disallow: */tags/
 Disallow: */categories/
 
-sitemap: https://john015.github.io/sitemap.xml
+sitemap: https://john015.netlify.com/sitemap.xml
