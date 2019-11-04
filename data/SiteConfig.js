@@ -2,7 +2,7 @@ const config = {
   siteTitle: 'John`s Dev log', // Site title.
   siteTitleShort: 'John`s Dev log', // Short site title for homescreen (PWA). Preferably should be under 12 characters to prevent truncation.
   siteTitleAlt: 'My Dev log', // Alternative site title for SEO.
-  siteLogo: '', // Logo used for SEO and manifest.
+  siteLogo: '/logos/favicon-96x96.png', // Logo used for SEO and manifest.
   siteUrl: 'https://john015.netlify.com', // Domain of your website without pathPrefix.
   pathPrefix: '/', // Prefixes all links. For cases when deployed to example.github.io/gatsby-material-starter/.
   fixedFooter: false, // Whether the footer component is fixed, i.e. always visible

@@ -106,6 +106,12 @@ module.exports = {
     },
     'gatsby-plugin-offline',
     {
+      resolve: 'gatsby-plugin-favicon', 
+      options: {
+        logo: './static/assets/favicon.png'
+      }
+    },
+    {
       resolve: 'gatsby-plugin-feed',
       options: {
         setup(ref) {
