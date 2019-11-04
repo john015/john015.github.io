@@ -167,6 +167,10 @@ $phone-status-bar-height: 24px - 12px;
   background: #f00 !important;
   height: 4px !important;
 }
+
+#nprogress .peg {
+  box-shadow: none;
+}
 @media (min-width: 640px) {
   .post-page-contents img {
     object-fit: initial !important;
