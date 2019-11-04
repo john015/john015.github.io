@@ -7,6 +7,7 @@ import PostListing from '../components/PostListing'
 import SEO from '../components/SEO'
 import config from '../../data/SiteConfig'
 
+
 class Index extends React.Component {
   state = { displayingData: [], dataLength: 0, isCompletedLoadingData: false }
 
