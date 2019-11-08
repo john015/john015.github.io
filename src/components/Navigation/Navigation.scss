@@ -42,6 +42,11 @@
   background-color: transparent !important;
 }
 
+.navigation-container header button {
+    display: none;
+}
+
+
 @media screen and (min-width: 1025px) {
   .md-btn--icon {
     height: 44px !important;
@@ -51,5 +56,11 @@
       position: relative;
       bottom: 2.4px;
     }
+  }
+}
+
+@media screen and (max-width: 639px) {
+  .navigation-container header button {
+      display: inline-block;
   }
 }

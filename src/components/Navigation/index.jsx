@@ -17,6 +17,7 @@ class Navigation extends Component {
             John`s Dev log
           </Link>
 )}
+        className="navigation-container"
         contentClassName="main-content"
         navItems={GetNavList(config)}
         mobileDrawerType={NavigationDrawer.DrawerTypes.TEMPORARY}
