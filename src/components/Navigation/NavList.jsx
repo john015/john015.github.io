@@ -11,6 +11,12 @@ function GetNavList(config) {
       to: '/'
     },
     {
+      primaryText: 'About',
+      leftIcon: <FontIcon>person</FontIcon>,
+      component: Link,
+      to: '/about/'
+    },
+    {
       divider: true
     }
   ]
