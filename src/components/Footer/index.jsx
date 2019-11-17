@@ -1,15 +1,17 @@
-import React, { Component } from 'react'
+import React, { PureComponent } from 'react'
 import config from '../../../data/SiteConfig'
 import './Footer.scss'
 
-class Footer extends Component {
+class Footer extends PureComponent {
   render() {
-    const { copyright, fixedFooter } = config
+    const { copyright } = config
     if (!copyright) {
       return null
     }
+    const isAboutPage = location && location.pathname.includes('/about')
+
     return (
-      <footer className={fixedFooter ? 'footer footer-fixed' : 'footer'}>
+      <footer className={isAboutPage ? 'footer hidden' : 'footer'}>
         <div className="notice-container">
           <span className="copyright">
             <h4>{copyright}</h4>

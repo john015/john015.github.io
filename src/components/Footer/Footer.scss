@@ -24,6 +24,9 @@
       margin: 0;
     }
   }
+  &.hidden {
+    display: none;
+  }
 }
 
 .footer-fixed {
