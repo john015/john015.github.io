@@ -105,6 +105,14 @@ module.exports = {
         }`
       }
     },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: 'john`s dev log',
+        short_name: 'john`s dev log',
+        start_url: '/'
+      }
+    },
     'gatsby-plugin-offline',
     {
       resolve: 'gatsby-plugin-favicon',
