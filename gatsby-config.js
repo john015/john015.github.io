@@ -20,6 +20,7 @@ module.exports = {
     }
   },
   plugins: [
+    'gatsby-plugin-emotion',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-lodash',
     'gatsby-plugin-sass',
@@ -106,7 +107,7 @@ module.exports = {
     },
     'gatsby-plugin-offline',
     {
-      resolve: 'gatsby-plugin-favicon', 
+      resolve: 'gatsby-plugin-favicon',
       options: {
         logo: './static/assets/favicon.png'
       }
