@@ -8,7 +8,9 @@ class Footer extends PureComponent {
     if (!copyright) {
       return null
     }
-    const isAboutPage = location && location.pathname.includes('/about')
+    const isAboutPage =
+      typeof window !== 'undefined' &&
+      window.location.pathname.includes('/about')
 
     return (
       <footer className={isAboutPage ? 'footer hidden' : 'footer'}>
