@@ -78,8 +78,8 @@ const AboutWrapperCSS = css`
     margin: 0;
     width: 100%;
     padding: 24px 16px;
-    min-height: 85vh;
     word-break: keep-all;
+    box-shadow: none;
   }
 `
 
