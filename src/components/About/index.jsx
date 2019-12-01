@@ -28,7 +28,7 @@ class About extends Component {
             <p>
               현재는
               <a href="https://class101.net">
-                <span css={HighlightedTextCSS}>Class101</span>
+                Class101
               </a>
               이라는 회사에서 프론트엔드 개발자로 일하고 있습니다.
             </p>
