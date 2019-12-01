@@ -28,6 +28,10 @@ $phone-status-bar-height: 24px - 12px;
     z-index: 6 !important;
   }
 
+  ul, ol {
+    padding-left: 20px;
+  }
+
   img {
     max-width: 100%;
   }
@@ -73,6 +77,8 @@ $phone-status-bar-height: 24px - 12px;
       word-break: break-word;
       font-size: 18px;
       pre {
+        margin-top: 14px;
+        margin-bottom: 14px;
         background-color: rgb(40, 44, 52) !important;
         > * {
           background-color: transparent;
@@ -191,7 +197,7 @@ $phone-status-bar-height: 24px - 12px;
       margin-top: 8px !important;
     }
     .md-paper .md-card-text {
-      padding: 20px !important;
+      padding: 12px !important;
     }
   }
   .post-page-contents .md-grid.md-grid--no-spacing > .md-cell--9 {

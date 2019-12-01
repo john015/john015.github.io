@@ -155,3 +155,10 @@ pre > code.highlight {
   outline: 0.4em solid #c66;
   outline-offset: 0.4em;
 }
+
+@media (max-width: 640px) {
+  code[class*='language-'],
+  pre[class*='language-'] {
+    font-size: 12px;
+  }
+}
