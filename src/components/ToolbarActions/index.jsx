@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import UserLinks from '../UserLinks'
 import './ToolbarActions.scss'
 import { css } from '@emotion/core'
+import { Link } from 'gatsby';
 
 const baseLinkCSS = css`
   position: absolute;
@@ -27,12 +28,12 @@ class Toolbar extends Component {
     return (
       <div className="toolbar-actions">
         <div className="userlinks-container">
-          <a css={baseLinkCSS} href="/">
-            <i class="fa fa-home md-icon" />
-          </a>
-          <a css={AboutLinkCSS} href="/about">
-            <i class="fa fa-user md-icon" />
-          </a>
+          <Link css={baseLinkCSS} to="/">
+            <i className="fa fa-home md-icon" />
+          </Link>
+          <Link css={AboutLinkCSS} to="/about">
+            <i className="fa fa-user md-icon" />
+          </Link>
           <UserLinks config={config} />
         </div>
       </div>
