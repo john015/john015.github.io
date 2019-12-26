@@ -1,9 +1,10 @@
 code[class*='language-'],
 pre[class*='language-'] {
+  -webkit-font-smoothing: antialiased;
   border-radius: 10px;
   color: #ccc;
   background: none;
-  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  font-family: Consolas, Menlo, Monaco, source-code-pro, Courier New, monospace;
   font-size: 14px;
   text-align: left;
   white-space: pre;
@@ -31,7 +32,7 @@ pre[class*='language-'] {
 
 :not(pre) > code[class*='language-'],
 pre[class*='language-'] {
-  background: #2d2d2d;
+  background-color: #011627;
 }
 
 /* Inline code */
@@ -41,78 +42,53 @@ pre[class*='language-'] {
   white-space: normal;
 }
 
-.token.comment,
-.token.block-comment,
-.token.prolog,
-.token.doctype,
-.token.cdata {
-  color: #999;
-}
-
-.token.punctuation {
-  color: #ccc;
-}
-
-.token.tag,
-.token.attr-name,
-.token.namespace,
-.token.deleted {
-  color: #e2777a;
-}
-
-.token.function-name {
-  color: #6196cc;
-}
-
-.token.boolean,
-.token.number,
-.token.function {
-  color: #f08d49;
-}
-
-.token.property,
-.token.class-name,
-.token.constant,
-.token.symbol {
-  color: #f8c555;
-}
-
-.token.selector,
-.token.important,
-.token.atrule,
-.token.keyword,
-.token.builtin {
-  color: #cc99cd;
-}
-
-.token.string,
-.token.char,
-.token.attr-value,
-.token.regex,
-.token.variable {
-  color: #7ec699;
-}
-
-.token.operator,
-.token.entity,
-.token.url {
-  color: #67cdcc;
-}
-
-.token.important,
-.token.bold {
-  font-weight: bold;
-}
-.token.italic {
+.token.attr-name {
+  color: #addb67;
   font-style: italic;
 }
-
-.token.entity {
-  cursor: help;
+.token.comment {
+  color: #809393;
 }
-
-.token.inserted {
-  color: green;
+.token.string,
+.token.url {
+  color: #addb67;
+}
+.token.variable {
+  color: #d6deeb;
+}
+.token.number {
+  color: #f78c6c;
+}
+.token.builtin,
+.token.char,
+.token.constant,
+.token.function {
+  color: #82aaff;
+}
+.token.punctuation {
+  color: #c792ea;
+}
+.token.doctype,
+.token.selector {
+  color: #c792ea;
+  font-style: 'italic';
+}
+.token.class-name {
+  color: #ffcb8b;
+}
+.token.keyword,
+.token.operator,
+.token.tag {
+  color: #ffa7c4;
+}
+.token.boolean {
+  color: #ff5874;
+}
+.token.property {
+  color: #80cbc4;
+}
+.token.namespace {
+  color: #b2ccd6;
 }
 
 .post-body .language-text {
@@ -122,4 +98,13 @@ pre[class*='language-'] {
   position: relative;
   bottom: 1px;
   margin-right: 4px;
+}
+
+@media screen and (max-width: 839px) {
+  code[class*='language-'],
+  pre[class*='language-'] {
+    width: calc(100% + 40px);
+    transform: translateX(-20px);
+    border-radius: 0;
+  }
 }

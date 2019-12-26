@@ -28,7 +28,8 @@ $phone-status-bar-height: 24px - 12px;
     z-index: 6 !important;
   }
 
-  ul, ol {
+  ul,
+  ol {
     padding-left: 20px;
   }
 
@@ -41,6 +42,7 @@ $phone-status-bar-height: 24px - 12px;
   }
 
   .post-header {
+    word-break: keep-all;
     color: rgba(0, 0, 0, 0.84);
     font-size: 32px;
     font-weight: bold;
@@ -52,6 +54,7 @@ $phone-status-bar-height: 24px - 12px;
   }
 
   .detail-post-wrap {
+    width: 100%;
     margin-top: 95px;
     margin-bottom: 10px;
     display: flex;
@@ -77,9 +80,8 @@ $phone-status-bar-height: 24px - 12px;
       word-break: break-word;
       font-size: 18px;
       pre {
-        margin-top: 14px;
-        margin-bottom: 14px;
-        background-color: rgb(40, 44, 52) !important;
+        margin-top: 18px;
+        margin-bottom: 18px;
         > * {
           background-color: transparent;
         }
@@ -177,6 +179,12 @@ $phone-status-bar-height: 24px - 12px;
 #nprogress .peg {
   box-shadow: none;
 }
+@media (max-width: 839px) {
+  .post-page-contents .detail-post-wrap {
+    margin-top: 80px;
+  }
+}
+
 @media (min-width: 640px) {
   .post-page-contents img {
     object-fit: initial !important;
@@ -185,8 +193,8 @@ $phone-status-bar-height: 24px - 12px;
 @media (max-width: 640px) {
   .post-page-contents {
     .post-header {
-      font-size: 24px;
-      font-weight: 32px;
+      font-size: 28px;
+      font-weight: 36px;
     }
     img {
       top: 20px !important;
@@ -197,7 +205,7 @@ $phone-status-bar-height: 24px - 12px;
       margin-top: 8px !important;
     }
     .md-paper .md-card-text {
-      padding: 12px !important;
+      padding: 20px !important;
     }
   }
   .post-page-contents .md-grid.md-grid--no-spacing > .md-cell--9 {
