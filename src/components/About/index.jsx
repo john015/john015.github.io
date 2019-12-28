@@ -2,6 +2,68 @@ import React, { Component } from 'react'
 import Card from 'react-md/lib/Cards/Card'
 import { css } from '@emotion/core'
 
+const AboutWrapperCSS = css`
+  width: 75%;
+  max-width: 700px;
+  padding: 24px 40px;
+  margin: 60px auto 0 auto;
+  @media (max-width: 639px) {
+    position: absolute;
+    height: calc(100vh - 56px);
+    margin: 0;
+    width: 100%;
+    padding: 24px 16px;
+    word-break: keep-all;
+    box-shadow: none;
+  }
+`
+
+const AboutSectionCSS = css`
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  > p {
+    font-size: 18px;
+    line-height: 1.75;
+  }
+  color: rgba(0, 0, 0, 0.87);
+`
+
+const HighlightedTextCSS = css`
+  font-size: 16px;
+  color: #f00;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  position: relative;
+  bottom: 1px;
+  margin: 0 4px;
+  padding: 0.1em;
+  border-radius: 0.3em;
+  font-family: Consolas, Menlo, Monaco, 'Andale Mono WT', 'Andale Mono',
+    'Lucida Console', 'Lucida Sans Typewriter', 'DejaVu Sans Mono',
+    'Bitstream Vera Sans Mono', 'Liberation Mono', 'Nimbus Mono L',
+    'Courier New', Courier, monospace;
+`
+
+const LinkCSS = css`
+  position: relative;
+  font-size: 14px;
+  &:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 1px;
+    background-color: #f00;
+  }
+`
+
+const CompanyNameCSS = css`
+  display: inline-block;
+  margin-left: 4px;
+`
+
 class About extends Component {
   render() {
     return (
@@ -27,10 +89,10 @@ class About extends Component {
             </p>
             <p>
               현재는
-              <a href="https://class101.net">
+              <a css={CompanyNameCSS} href="https://class101.net">
                 Class101
               </a>
-              이라는 회사에서 프론트엔드 개발자로 일하고 있습니다.
+              에서 웹 프론트엔드 개발자로 일하고 있습니다.
             </p>
 
             <p>
@@ -67,50 +129,3 @@ class About extends Component {
 }
 
 export default About
-
-const AboutWrapperCSS = css`
-  width: 75%;
-  max-width: 700px;
-  padding: 24px 40px;
-  margin: 60px auto 0 auto;
-  @media (max-width: 639px) {
-    position: absolute;
-    margin: 0;
-    width: 100%;
-    padding: 24px 16px;
-    word-break: keep-all;
-    box-shadow: none;
-  }
-`
-
-const AboutSectionCSS = css`
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  > p {
-    font-size: 18px;
-    line-height: 1.75;
-  }
-  color: rgba(0, 0, 0, 0.87);
-`
-
-const HighlightedTextCSS = css`
-  font-size: 14px;
-  color: #f00;
-  border: 1px solid #eaeaea;
-  background-color: #f8f8f8;
-  position: relative;
-  bottom: 1px;
-  margin: 0 4px;
-  padding: 0.1em;
-  border-radius: 0.3em;
-  font-family: Consolas, Menlo, Monaco, 'Andale Mono WT', 'Andale Mono',
-    'Lucida Console', 'Lucida Sans Typewriter', 'DejaVu Sans Mono',
-    'Bitstream Vera Sans Mono', 'Liberation Mono', 'Nimbus Mono L',
-    'Courier New', Courier, monospace;
-`
-
-const LinkCSS = css`
-  font-size: 14px;
-  text-decoration: underline;
-`
