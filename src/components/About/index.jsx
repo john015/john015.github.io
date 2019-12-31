@@ -71,7 +71,7 @@ class About extends Component {
         <Card css={AboutWrapperCSS} className="md-cell--8">
           <div css={AboutSectionCSS}>
             <h2>안녕하세요.</h2>
-            <p>프론트엔드 개발자 이상원입니다.</p>
+            <p>웹 프론트엔드 개발자 이상원입니다.</p>
             <p>새로운 기술을 익히고 쓰는 것을 좋아합니다.</p>
             <p>웹 개발하는 것을 즐기며, 오픈소스도 좋아합니다.</p>
             <p>

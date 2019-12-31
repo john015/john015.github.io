@@ -4,3 +4,15 @@
 [build.environment]
   YARN_VERSION = "1.13.0"
 
+[[headers]]
+  for = "/*"
+
+  [headers.values]
+    cache-control = '''
+      max-age=31557600,
+      no-cache,
+      no-store,
+      must-revalidate'''
+
+[build.processing.images]
+  compress = true
