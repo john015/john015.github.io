@@ -75,15 +75,10 @@ class About extends Component {
             <p>새로운 기술을 익히고 쓰는 것을 좋아합니다.</p>
             <p>웹 개발하는 것을 즐기며, 오픈소스도 좋아합니다.</p>
             <p>
-              <span
-                css={css`
-                  ${HighlightedTextCSS};
-                  margin-left: 0px;
-                `}
-              >
-                React
-              </span>
-              ,<span css={HighlightedTextCSS}>TypeScript</span>,
+              요즘
+              <span css={HighlightedTextCSS}>React</span>,
+              <span css={HighlightedTextCSS}>TypeScript</span>,
+              <span css={HighlightedTextCSS}>CSS-in-JS</span>,
               <span css={HighlightedTextCSS}>웹 성능 최적화</span>에 관심이
               많습니다.
             </p>
