@@ -1,33 +1,33 @@
 @import '../../layout/theme.scss';
 
-.post-preview-tags {
-  height: 28px;
-  font-size: 14px;
-  padding-left: 8px;
-  padding-right: 8px;
-  border-radius: 3px;
-  margin: 5px 10px 0 0;
-  cursor: pointer;
-  background-color: white;
-  border: 1px solid $md-secondary-color;
-  transform: scale(1);
-  transition: transform 0.2s ease;
-  will-change: transform;
-
-  &:hover {
-    background-color: white;
-    transform: scale(1.05);
-  }
-
-  > .md-chip-text {
-    color: $md-secondary-color;
-  }
-}
-
 .post-tag-container {
   margin-top: 14px;
   display: flex;
   flex-flow: row wrap;
   align-content: center;
   align-items: center;
+
+  .post-preview-tags {
+    height: 28px;
+    font-size: 14px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 3px;
+    margin: 5px 10px 0 0;
+    cursor: pointer;
+    background-color: white;
+    border: 1px solid $md-secondary-color;
+    transform: scale(1);
+    transition: transform 0.2s ease;
+    will-change: transform;
+
+    &:hover {
+      background-color: white;
+      transform: scale(1.05);
+    }
+
+    > .md-chip-text {
+      color: $md-secondary-color;
+    }
+  }
 }
