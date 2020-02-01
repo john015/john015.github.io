@@ -16,7 +16,7 @@ class PostTags extends Component {
               style={{ textDecoration: 'none' }}
               to={`/tags/${_.kebabCase(tag)}`}
             >
-              <Chip label={`#${tag}`} className="post-preview-tags" />
+              <Chip label={`${tag}`} className="post-preview-tags" />
             </Link>
           ))}
       </div>

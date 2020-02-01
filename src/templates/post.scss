@@ -19,6 +19,89 @@ $phone-status-bar-height: 24px - 12px;
 .md-grid {
   padding: 0 !important;
 }
+
+.post-body {
+  max-width: 100%;
+  font-weight: 400;
+  word-break: break-word;
+  font-size: 18px;
+  padding: 20px 0 0;
+  > h2,
+  > h3,
+  > h4,
+  > h5,
+  > h6 {
+    margin-bottom: 10px !important;
+  }
+
+  h2,
+  h3,
+  h4 {
+    white-space: normal;
+    margin-top: 40px;
+  }
+  p {
+    margin-bottom: 0px !important;
+    line-height: 1.8;
+  }
+
+  blockquote {
+    margin: 0;
+    padding: 10px 15px;
+    border-left: 4px solid #ddd;
+  }
+
+  li {
+    margin-top: 15px;
+  }
+
+  /**
+             * Based on MUICSS's Table Component
+             */
+  table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  table > thead > tr > th,
+  table > tbody > tr > th,
+  table > tfoot > tr > th {
+    text-align: left;
+  }
+
+  table > thead > tr > th,
+  table > thead > tr > td,
+  table > tbody > tr > th,
+  table > tbody > tr > td,
+  table > tfoot > tr > th,
+  table > tfoot > tr > td {
+    padding: 10px;
+    line-height: 1.429;
+  }
+
+  table > thead > tr > th {
+    border-bottom: 2px solid rgba(0, 0, 0, 0.12);
+    font-weight: 700;
+  }
+
+  table > tbody + tbody {
+    border-top: 2px solid rgba(0, 0, 0, 0.12);
+  }
+
+  table > tbody > tr > td {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  }
+
+  :target::before {
+    content: '';
+    display: block;
+    position: relative;
+    height: $md-toolbar-mobile-portrait-height + $phone-status-bar-height;
+    margin: -($md-toolbar-mobile-portrait-height + $phone-status-bar-height) 0 0;
+  }
+}
+
 .post-page-contents {
   justify-content: center;
   width: 100%;
@@ -73,88 +156,6 @@ $phone-status-bar-height: 24px - 12px;
         padding: 0px 16px;
       }
     }
-
-    .post-body {
-      max-width: 100%;
-      font-weight: 400;
-      word-break: break-word;
-      font-size: 18px;
-      > h2,
-      > h3,
-      > h4,
-      > h5,
-      > h6 {
-        margin-bottom: 10px !important;
-      }
-
-      h2,
-      h3,
-      h4 {
-        white-space: normal;
-        margin-top: 40px;
-      }
-      p {
-        margin-bottom: 0px !important;
-        line-height: 1.75;
-      }
-
-      blockquote {
-        margin: 0;
-        padding: 10px 15px;
-        border-left: 4px solid #ddd;
-      }
-
-      li {
-        margin-top: 15px;
-      }
-
-      /**
-             * Based on MUICSS's Table Component
-             */
-      table {
-        width: 100%;
-        max-width: 100%;
-        margin-bottom: 20px;
-      }
-
-      table > thead > tr > th,
-      table > tbody > tr > th,
-      table > tfoot > tr > th {
-        text-align: left;
-      }
-
-      table > thead > tr > th,
-      table > thead > tr > td,
-      table > tbody > tr > th,
-      table > tbody > tr > td,
-      table > tfoot > tr > th,
-      table > tfoot > tr > td {
-        padding: 10px;
-        line-height: 1.429;
-      }
-
-      table > thead > tr > th {
-        border-bottom: 2px solid rgba(0, 0, 0, 0.12);
-        font-weight: 700;
-      }
-
-      table > tbody + tbody {
-        border-top: 2px solid rgba(0, 0, 0, 0.12);
-      }
-
-      table > tbody > tr > td {
-        border-bottom: 1px solid rgba(0, 0, 0, 0.12);
-      }
-
-      :target::before {
-        content: '';
-        display: block;
-        position: relative;
-        height: $md-toolbar-mobile-portrait-height + $phone-status-bar-height;
-        margin: -($md-toolbar-mobile-portrait-height + $phone-status-bar-height)
-          0 0;
-      }
-    }
   }
 }
 .date .md-icon {
@@ -186,8 +187,8 @@ $phone-status-bar-height: 24px - 12px;
 @media (max-width: 640px) {
   .post-page-contents {
     .post-header {
-      font-size: 28px;
-      font-weight: 36px;
+      font-size: 20px;
+      line-height: 28px;
     }
     img {
       top: 20px !important;
@@ -210,5 +211,9 @@ $phone-status-bar-height: 24px - 12px;
   }
   .md-cell--12 {
     width: 100%;
+  }
+  .post-body p {
+    font-size: 16px;
+    line-height: 1.85;
   }
 }

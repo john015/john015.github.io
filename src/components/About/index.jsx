@@ -24,14 +24,14 @@ const AboutSectionCSS = css`
   width: 100%;
   > p {
     font-size: 18px;
-    line-height: 1.75;
+    line-height: 1.8;
   }
   color: rgba(0, 0, 0, 0.87);
 `
 
 const HighlightedTextCSS = css`
   font-size: 16px;
-  color: #f00;
+  color: #d23669;
   border: 1px solid #eaeaea;
   background-color: #f8f8f8;
   position: relative;
@@ -55,7 +55,7 @@ const LinkCSS = css`
     bottom: -2px;
     width: 100%;
     height: 1px;
-    background-color: #f00;
+    background-color: #d23669;
   }
 `
 

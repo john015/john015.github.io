@@ -14,3 +14,10 @@
     object-fit: fill !important;
   }
 }
+
+@media screen and (max-width: 839px) and (min-width: 600px) {
+  .post-cover-image {
+    right: 8px;
+    width: calc(100% + 16px) !important;
+  }
+}

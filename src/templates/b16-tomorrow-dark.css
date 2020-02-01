@@ -94,12 +94,11 @@ pre[class*='language-'] {
 }
 
 .post-body .language-text {
-  color: #f00;
-  border: 1px solid #eaeaea;
-  background-color: #f8f8f8;
-  position: relative;
-  bottom: 1px;
-  margin-right: 4px;
+  font-size: 18px;
+  color: #1a1a1a;
+  background-color: rgba(255, 229, 100, 0.2);
+  padding: 2p;
+  border-radius: 3px;
 }
 
 @media screen and (max-width: 839px) {
@@ -108,5 +107,11 @@ pre[class*='language-'] {
     width: calc(100% + 40px);
     transform: translateX(-20px);
     border-radius: 0;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .post-body .language-text {
+    font-size: 16px;
   }
 }
