@@ -42,7 +42,7 @@ $phone-status-bar-height: 24px - 12px;
   }
   p {
     margin-bottom: 0px !important;
-    line-height: 1.8;
+    line-height: 1.9;
   }
 
   blockquote {
@@ -213,7 +213,8 @@ $phone-status-bar-height: 24px - 12px;
     width: 100%;
   }
   .post-body p {
+    word-break: break-all;
     font-size: 16px;
-    line-height: 1.85;
+    line-height: 1.9;
   }
 }
