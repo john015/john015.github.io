@@ -24,7 +24,7 @@ const AboutSectionCSS = css`
   width: 100%;
   > p {
     font-size: 18px;
-    line-height: 1.8;
+    line-height: 1.9;
   }
   color: rgba(0, 0, 0, 0.87);
 `
