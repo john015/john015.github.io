@@ -52,7 +52,7 @@ class Index extends React.Component {
     const { displayingData } = this.state
     const postEdges = data.allMarkdownRemark
     return (
-      <Layout location={location} title="John`s Dev log">
+      <Layout location={location} title="john's Dev log">
         <div className="index-container">
           <Helmet>
             <title>{config.siteTitle}</title>

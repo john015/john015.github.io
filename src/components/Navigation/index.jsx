@@ -14,7 +14,7 @@ class Navigation extends Component {
         drawerTitle={config.siteTitle}
         toolbarTitle={(
           <Link to="/" className="nav-title">
-            John`s Dev log
+            john's Dev log
           </Link>
 )}
         className="navigation-container"

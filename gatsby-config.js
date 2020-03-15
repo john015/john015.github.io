@@ -108,8 +108,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'john`s dev log',
-        short_name: 'john`s dev log',
+        name: `john's dev log`,
+        short_name: `john's dev log`,
         start_url: '/'
       }
     },
@@ -126,7 +126,7 @@ module.exports = {
         setup(ref) {
           const ret = ref.query.site.siteMetadata.rssMetadata
           ret.allMarkdownRemark = ref.query.allMarkdownRemark
-          ret.generator = 'John`s dev log'
+          ret.generator = `john's dev log`
           return ret
         },
         query: `
