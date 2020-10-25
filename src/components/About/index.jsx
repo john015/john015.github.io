@@ -74,7 +74,7 @@ class About extends Component {
             <p>웹 프론트엔드 개발자 이상원입니다.</p>
             <p>새로운 기술을 익히고 쓰는 것을 좋아하며, 수려한 UI/UX의 제품을 만드는걸 즐깁니다.</p>
             <p>
-              현재는 <span css={HighlightedTextCSS}>토스</span를 운영하는 비바리퍼블리카에서 프론트엔드 개발자로 일하고 있습니다.
+              현재는 <span css={HighlightedTextCSS}>토스</span>를 운영하는 비바리퍼블리카에서 프론트엔드 개발자로 일하고 있습니다.
             </p>
             <p>
               이 블로그는 제가 관심 있는 주제나, 새롭게 업데이트된 기능을 주로
