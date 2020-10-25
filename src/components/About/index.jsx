@@ -72,8 +72,7 @@ class About extends Component {
           <div css={AboutSectionCSS}>
             <h2>안녕하세요.</h2>
             <p>웹 프론트엔드 개발자 이상원입니다.</p>
-            <p>새로운 기술을 익히고 쓰는 것을 좋아합니다.</p>
-            <p>웹 생태계를 좋아하며, 오픈소스에 기여하는 것도 좋아합니다.</p>
+            <p>새로운 기술을 익히고 쓰는 것을 좋아하며, 수려한 UI/UX의 제품을 만드는걸 즐깁니다.</p>
             <p>
               현재는 <span css={HighlightedTextCSS}>토스</span를 운영하는 비바리퍼블리카에서 프론트엔드 개발자로 일하고 있습니다.
             </p>
