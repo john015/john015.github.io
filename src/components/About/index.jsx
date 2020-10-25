@@ -4,7 +4,7 @@ import { css } from '@emotion/core'
 
 const AboutWrapperCSS = css`
   width: 75%;
-  max-width: 700px;
+  max-width: 800px;
   padding: 24px 40px;
   margin: 60px auto 0 auto;
   @media (max-width: 639px) {
@@ -73,23 +73,10 @@ class About extends Component {
             <h2>안녕하세요.</h2>
             <p>웹 프론트엔드 개발자 이상원입니다.</p>
             <p>새로운 기술을 익히고 쓰는 것을 좋아합니다.</p>
-            <p>웹 개발하는 것을 즐기며, 오픈소스도 좋아합니다.</p>
+            <p>웹 생태계를 좋아하며, 오픈소스에 기여하는 것도 좋아합니다.</p>
             <p>
-              요즘
-              <span css={HighlightedTextCSS}>React</span>,
-              <span css={HighlightedTextCSS}>TypeScript</span>,
-              <span css={HighlightedTextCSS}>CSS-in-JS</span>,
-              <span css={HighlightedTextCSS}>웹 성능 최적화</span>에 관심이
-              많습니다.
+              현재는 <span css={HighlightedTextCSS}>토스</span를 운영하는 비바리퍼블리카에서 프론트엔드 개발자로 일하고 있습니다.
             </p>
-            <p>
-              현재는
-              <a css={CompanyNameCSS} href="https://class101.net">
-                Class101
-              </a>
-              에서 웹 프론트엔드 개발자로 일하고 있습니다.
-            </p>
-
             <p>
               이 블로그는 제가 관심 있는 주제나, 새롭게 업데이트된 기능을 주로
               포스팅 합니다.
@@ -101,20 +88,6 @@ class About extends Component {
             <p>
               만약 제 블로그 글의 내용에 틀린 내용이 있을경우 댓글로
               지적해주시면 감사하겠습니다.
-            </p>
-            <p>
-              <a
-                css={css`
-                  ${LinkCSS};
-                  margin-right: 8px;
-                `}
-                href="https://github.com/john015/"
-              >
-                github
-              </a>
-              <a css={LinkCSS} href="mailto:lsw0150305@gmail.com">
-                email
-              </a>
             </p>
           </div>
         </Card>
