@@ -22,11 +22,15 @@ const AboutSectionCSS = css`
   display: flex;
   flex-direction: column;
   width: 100%;
-  > p {
-    font-size: 18px;
-    line-height: 1.9;
-  }
+  font-size: 16px;
+  line-height: 2.2;
   color: rgba(0, 0, 0, 0.87);
+  white-space: pre-wrap;
+
+  @media (max-width: 639px) {
+    font-size: 14px;
+    white-space: normal;
+  }
 `
 
 const HighlightedTextCSS = css`
@@ -67,30 +71,14 @@ const CompanyNameCSS = css`
 class About extends Component {
   render() {
     return (
-      <div className="about-container md-grid mobile-fix">
+      <article className="about-container md-grid mobile-fix">
         <Card css={AboutWrapperCSS} className="md-cell--8">
-          <div css={AboutSectionCSS}>
+          <section css={AboutSectionCSS}>
             <h2>안녕하세요.</h2>
-            <p>웹 프론트엔드 개발자 이상원입니다.</p>
-            <p>새로운 기술을 익히고 쓰는 것을 좋아하며, 수려한 UI/UX의 제품을 만드는걸 즐깁니다.</p>
-            <p>
-              현재는 <span css={HighlightedTextCSS}>토스</span>를 운영하는 비바리퍼블리카에서 프론트엔드 개발자로 일하고 있습니다.
-            </p>
-            <p>
-              이 블로그는 제가 관심 있는 주제나, 새롭게 업데이트된 기능을 주로
-              포스팅 합니다.
-            </p>
-            <p>
-              최대한 한국어로 되어 있는 정보들이 적은 주제를 포스팅하려고 노력
-              중입니다.
-            </p>
-            <p>
-              만약 제 블로그 글의 내용에 틀린 내용이 있을경우 댓글로
-              지적해주시면 감사하겠습니다.
-            </p>
-          </div>
+            {"웹 프론트엔드 개발자 이상원입니다. \n저는 새로운 기술을 배우고 쓰는 것을 좋아하며, 수려한 UI/UX의 제품을 만드는걸 즐깁니다. \n현재는 비바리퍼블리카에서 프론트엔드 개발자로 일하고 있습니다. \n이 블로그에는 주로 제가 관심 있는 주제나 공유하고 싶은 내용들을 포스팅 하고 있습니다. \n최대한 한국어로 되어 있는 정보가 적은 주제를 포스팅하려고 하는데 쉽지 않네요.. \n재미있어 보이는 기술이 새로 나왔을 때 제게 메일 주시면 확인한 뒤 관련해서 포스팅 해보겠습니다."}
+          </section>
         </Card>
-      </div>
+      </article>
     )
   }
 }
